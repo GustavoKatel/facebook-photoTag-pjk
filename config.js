@@ -1,7 +1,12 @@
 
 module.exports = function(config) {
 
-  config.accessToken = "CAAWIZCjJWQZBYBAAjG8zAMVDew90Q4tcKZAzSTBh1X1kjwWMiyQsLL7PJy3SNEM0wYanFn43TJd1LrqIh9DFSRwITUvPvoXZAGVgHPk8jB2guUUOX5eZBIR72EALl9SFbUVDsvZABHOkZAAdYO8cFYpS6msvGizaESaKRcBbFM8OjQVO3DSxQMWkTQY8DCSGwXPEkOMpvZAQHK0gmQLiR5vR"
+
+  /*
+  * Put your accessToken here.
+  * You can get one here: https://photonetworkpjk.herokuapp.com/app/auth/facebook/
+  */
+  config.accessToken = "ACCESS_TOKEN_HERE";
 
 
 }

@@ -53,13 +53,14 @@ builder.prototype.processPhoto = function(photo){
     }
   });
 
-  _.forEach($this.map, function(p){
-    if( _.includes(tags, p.name) ){
-      _.forEach(tags, function(tag){
-        if(p.name==tag)
+  _.forEach($this.map, function(p, pindex){
+    var pos = _.indexOf(tags, p.name);
+    if( pos>-1 ){
+      _.forEach(tags, function(tag, tindex){
+        if(tindex<=pos) {
           return;
-        if(p.links[tag])
-        {
+        }
+        if(p.links[tag]){
           p.links[tag] += 1;
         } else {
           var obj = _.find($this.map, { name:tag });
